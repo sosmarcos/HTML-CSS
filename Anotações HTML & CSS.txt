@@ -1,0 +1,255 @@
+github.com/gustavoguanabara
+gustavoguanabara.github.io
+
+====================|Referencias|================================================
+
+Referência MDN:
+Mozilla Developer Network
+
+W3C:
+World Wide Web Consortium
+
+WHATWG Living Standard:
+Web Hypertext Application Technology Working Group
+
+W3Schools:
+Refsnes Data
+
+====================================|Questões|=========================================
+
+01000001 = A «---|Código Multibyte
+                 |     UTF-8?
+
+=============================|Como a Internet Funciona?|===============================
+                                          
+                                          Domain Name Sistem
+                                                  |
+                          |-<-<-<-<-<-<-<-<-<-<-<-|  «--|Devolve o Indereço de IP
+                          |   |->->->->->->->-> |DNS|«--|Recebe o Indereço Web
+instagram.com ->->->->-|  |   |                   |
+    |                  |  |   |                   |
+Cliente <-------|Operador de Telefone|--------|Internet|-------> Servidor
+|   |   Tradução do sinal |          |            |           IP:3.224.112.47
+|S.Quadrado     |     Sinal Cenoidal |            |
+|   | <----|Modulação|----|          |            |
+|   |-----|Demodulação|---->         |	          |	  
+|               |                    |            |
+|             Modem                  |            |
+|____________________________________|            |
+               |                                  |
+Conexão com a  |InterConnection Working| «--------|     
+
+==============================|O que é HTML e CSS?|====================================
+
+         |Hypertext|
+HTML «---|Merkup   |---|Linguagem De Marcação de Hipertexto
+         |Language |   |Linguagem focada em conteudo «--|Textos
+                                                        |Imagens
+         |Cascading|                                    |Videos
+CSS  «---|Style    |---|Folhas de Estilo Em Cascata     |Tabelas        
+         |Sheets   |   |CSS e foco em Design «--|Cores
+                                                |Sombras
+                                                |Tamanhos
+JS   «---|Java     |                            |posicionamento
+         |Scrypt   |---|Linguagem de programação            
+                       |Focado em Interação  «--|Menus
+                                                |Animações
+                                                |Popups
+                                                |Validações
+
+===============================|Conteudo Em HTML|======================================
+
+ |---> Abertura   |-------------> Conteúdo
+ |     de Tag     |
+ |                |    |-----> Fechamento
+<h1>Exemplo de título</h1>     de Tag
+
+<p>Exemplo de parágrafo</p>
+
+<img src="foto.png" alt="Exemplo de foto">
+  |    Parâmetro <---|     |
+  |                        |---> Valor
+  |---> Abertura
+        de Tag
+
+================================|Estilo em CSS|========================================
+
+ |---> Seletor
+ |
+H1{                    
+   font-family: Arial;  |
+   font-size: 20pt;     |---> Declaração
+   color: blue;         |
+  }   |     |---> Valor
+      |
+      |------> Propriedade 
+
+======================| Estrutura Básica de documento HTML|============================
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport"
+       content="width=device-width initial-scale=1.0">
+       <title>Document</title>
+   </head>
+   <body>
+       <h1>Olá, Mundo!</h1>
+   </body>
+</html>
+
+===============================|Front-end e Back-end|==================================
+
+Cliente <-----------------------------> Servidor
+   |                                       |
+client-side <--|HTML5                 server-side <--|PHP
+   |           |CSS3                       |         |Java Scrypt
+Front-end      |Java Scrypt             Back-end     |C#
+                                                     |Python
+                                                     |Ruby
+                                                     |Java
+
+=============================| Códigos |===============================================
+
+Shift+Tab para voltar a indentação
+
+Adicionando símbolos especiais:  Less Than (&lt;)/ Greater than (&gt;)
+&reg;, &copy;, &trade;, &euro;, &pound;, &yen;, &cent;, &delta;, &alpha;, &zeta;, &Omega;
+
+Principais formatações semânticas:
+<strong> = Negrito
+<em> = Itálico
+<mark> = Marca Texto
+<small> = Texto pequeno
+<del> = Texto riscado
+<ins> = Texto inserido 
+<sup> = Texto sobrescrito
+<sub> = Texto subscrito
+<code> = Código-fonte
+<pre> = Texto pré-formatado
+<q> = Citações simples
+<blockquote cite="valor"> = Citações completas
+<abbr title="valor"> = Abreviações
+<bdo dir="rtl"> = Texto Invertido
+
+Listas:
+<ol> = Lista Ordenada
+<ul> = Lista não Ordenada
+<li> = Item da Lista
+<dl> = Lista de Definições
+<dt> = Termo
+<dd> = Definição
+
+Links:
+<a> = hiperlink
+    Parâmetros:
+    href = Links
+    target = Destido do link
+
+Midias:
+<img> = Imagens                      Imagem inserida
+<picture> = Para Imagens dinamicas        |
+<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+             |                                                     |
+ Definindo um limite de tamanho                               Tipo do arquivo
+ 
+<audio> = audio
+<video> = video
+    Parâmetros:
+    width = Largura
+    height = Altura
+    poster = Capa
+    controls = Controles do Reprodutor
+
+===================================| CSS |=============================================
+
+background-image: linear-gradient(90deg, colors...
+background-image: linear-gradient(to right, var(--cor1), transparent); <--|transparent!
+background-color
+background-attachment
+transition-duration: 0.5s; <--|Delay na transição dos estilos
+
+main p {                  <--|Quando o <p> esta relacionado ao <main> sem o seletor 
+    margin: 15px 0px;        |de children, passo a me referir a qualquer <p> dentro
+    text-align: justify;     |de um <main>
+}
+
+folha:
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.719);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+
+shorthand font:
+font-style -> font-weight -> font-size -> font-family
+
+@font-face = Inserindo fontes 
+    font-family: roma;
+    src: url(fonts/DOMINICA.TTF) format('truetype'), 
+    url(fonts/DOMII___.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+Tipos de formatos:
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (Apple advanced Typography)
+- svg
+
+Seletores personalizados:
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-elemnt
+>  = children
+
+=======================================|Caixas|========================================
+Tipos:
+    box-level = Sempre inicia em uma linha a parte.
+        Ex.| <div>     | <h1> - <h6> | <p>      |
+           | <main>    | <header>    | <nav>    |
+           | <article> | <aside>     | <footer> | 
+           | <form>    | <video>
+
+    inline-level = Ocupa um determinado espaço de uma linha.
+        Ex.| <span>        | <a>         | <code>      |
+           | <small>       | <strong>    | <em>        |
+           | <sup> - <sub> | <label>     | <button>    | 
+           | <input>       | <select>
+
+Anatomia:
+    height = Altura
+    width = Largura
+    borde = Borda
+    padding = Preenchimento
+    margin = Margem
+    outline = Contorno
+
+border: 1px solid black;
+
+configurações de lista:
+
+ul {
+    list-style-type: '\2714\00a0\00a0'; <--|Este número se refere a um emoji
+    list-style-position: inside;  <--|Este inside coloca as marcas para dentro da caixa
+    columns: 2;     <--|Columns serve para dividir o comteudo da lista em colunas
+}
+
+Variaveis em CSS:
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', 'Cursive';
+    --font-android: 'Android', 'Cursive';
+}
